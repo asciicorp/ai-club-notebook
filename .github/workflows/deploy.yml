@@ -27,7 +27,7 @@ jobs:
       - name: Synchronize Files
         run: |
           # Synchronize files from a source directory to a target directory
-          rsync -av --exclude='*.tmp' drive/
+          rsync -av --exclude='*.tmp'
 
       - name: Build the JupyterLite site
         run: |
